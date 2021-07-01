@@ -1,0 +1,18 @@
+<meta charset = "UTF-8">
+
+<script>
+
+var familia = prompt("Bem vindo, este arquivo calcula quantas gerações a sua família teve durante 521 anos! Por favor, informe o sobrenome referente.");
+var nome = prompt("Por favor, informe seu nome.");
+alert ("Esse programa só funciona quando se usa da mesma geração para responder as perguntas a seguir.");
+var anoPresente = parseInt(prompt(nome + ", informe em que anos estamos."));
+var idadeAo1Filho1 = parseInt(prompt(nome + ", informe que idade o irmão mais velho dessa geração tinha ao ter o primeiro filho."));
+var idadeAo1Filho2 = parseInt(prompt(nome + ", informe que idade o segundo irmão mais velho dessa geração tinha ao ter o primeiro filho."));
+var idadeAo1Filho3 = parseInt(prompt(nome + ", informe que idade o terceiro irmão dessa geração tinha ao ter o primeiro filho."));
+var idadeAo1Filho4 = parseInt(prompt(nome + ", informe que idade o irmão mais novo dessa geração tinha ao ter o primeiro filho."));
+
+var calculo = (anoPresente - 1500) / ((idadeAo1Filho1 + idadeAo1Filho2 + idadeAo1Filho3 + idadeAo1Filho4) / 4);
+
+document.write(nome + ", o número de gerações que existiram da família " + familia + " é " + calculo + ".");
+
+</script>
